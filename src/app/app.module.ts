@@ -9,6 +9,7 @@ import { ModelsComponent } from './components/models/models.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SortByPipe } from './components/models/pipes/sort-by.pipe';
 import { FilterByPipe } from './components/models/pipes/filter-by.pipe';
+import { ModelItemComponent } from './components/model-item/model-item.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FilterByPipe } from './components/models/pipes/filter-by.pipe';
     FooterComponent,
     ModelsComponent,
     SortByPipe,
-    FilterByPipe
+    FilterByPipe,
+    ModelItemComponent
   ],
   imports: [
     BrowserModule,

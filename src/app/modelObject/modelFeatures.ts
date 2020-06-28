@@ -1,4 +1,4 @@
-export class Model {
+export class modelFeatures {
 
     id : number;
     name : string;
