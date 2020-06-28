@@ -1,1 +1,35 @@
-<p>models works!</p>
+<div class="conteiner transition" >
+    <div class="banner">
+        <h1>Descubrí todos los modelos</h1>
+    </div>
+    <div class="filter" >
+      <h4 class="orden" (click) = "navFilterOpen()">Filtrar por <span><img src="../../../assets/home/filter/fill-1.png" alt="">
+        </span>
+        <span class="btn-style uno">
+          <button (click) = "filterFunction(0)" class="active" #btnFilterOne >Todos</button>
+          <button (click) = "filterFunction(1)" #btnFilterTwo >Autos</button>
+          <button (click) = "filterFunction(2)" #btnFilterThree >Pickup y Commerciales</button>
+          <button (click) = "filterFunction(3)" #btnFilterFour >SUVs y Croossovers</button>
+        </span> 
+    </h4>
+
+      <h4 class="orden" (click) = "navOrderOpen()">Ordenar por <span><img src="../../../assets/home/filter/fill-1.png" alt=""></span>
+        <span class="btn-style ordenar" [ngClass] = "{'active': orderOpen}">
+          <button (click)=orderFunction(0,0) class="active" #btnOrderOne>Nada</button>
+          <button (click)=orderFunction(1,1) #btnOrderTwo>De <span>menor a mayor </span>precio</button>
+          <button (click)=orderFunction(1,0) #btnOrderThree>De <span>mayor a menor </span>precio</button>
+          <button (click)=orderFunction(2,0) #btnOrderFour>Más <span>nuevos</span> primero</button>
+          <button (click)=orderFunction(2,1) #btnOrderFive>Más <span>viejos</span> primero</button>
+        </span>
+      </h4>
+    </div>
+
+    <hr>
+    <div class="card-container">
+      <div class="card" *ngFor="let model of models | filterBy:this.listafiltros[this.indice] | sortBy: this.OrdenAscDesc : this.listaOrden[this.indiceOrden]" ><!--(click)=" toFicha(model.model) "-->
+          <h2>{{model.name}}</h2>
+          <h3>{{model.year}} | ${{model.price}}</h3>
+          <img src="https://challenge.agenciaego.tech{{model.photo}}" alt="">
+      </div>
+  </div>
+</div>

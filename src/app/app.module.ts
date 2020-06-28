@@ -7,13 +7,17 @@ import { HeaderComponent } from './components/global/header/header.component';
 import { FooterComponent } from './components/global/footer/footer.component';
 import { ModelsComponent } from './components/models/models.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SortByPipe } from './components/models/pipes/sort-by.pipe';
+import { FilterByPipe } from './components/models/pipes/filter-by.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    ModelsComponent
+    ModelsComponent,
+    SortByPipe,
+    FilterByPipe
   ],
   imports: [
     BrowserModule,
