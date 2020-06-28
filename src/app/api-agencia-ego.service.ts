@@ -9,7 +9,6 @@ export class ApiAgenciaEgoService {
 
   constructor( private _http: HttpClient ) {}
 
-
  getModels():Observable<any>{
      return this._http.get('http://challenge.agenciaego.tech/models');
  }
