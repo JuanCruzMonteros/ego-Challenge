@@ -1,27 +1,44 @@
-# EgoChallenge
+# Lineamientos del proyecto EgoChallenge:
+  
+<p align="center">
+<img src="https://raw.githubusercontent.com/JuanCruzMonteros/TeamPlatinoRookieFAQs/master/lineamientos.png" />
+</p>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.4.
+## Getting Started  🚀
+_Para obtener una copia local en funcionamiento, siga estos sencillos pasos._
 
-## Development server
+### Pre requisitos 📋
+- 1: Debe tener instalado [Node](https://nodejs.org/es/download/)
+- 2: Debe tener instalado [Angular](https://cli.angular.io/) . En caso de no tenerlo, luego de instalar Node, debe ejecutar el siguiente comando en una consola o terminal:
+```sh
+npm install -g @angular/cli
+```
+- 3: Debe tener istalado [git-scm](https://git-scm.com/downloads)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Pasos para ejecutar el proyecto 🔧
+_En una terminal o consola debe ejecutar los siguientes comandos_
 
-## Code scaffolding
+- 1: Clonar proyecto:
+```sh
+git clone https://github.com/JuanCruzMonteros/ego-Challenge.git
+```
+- 2: Instalar dependencias:
+```sh
+npm install
+```
+- 3: Ejecutar el proyecto:
+```sh
+ng serve --open
+```
+_En unos segundos podrá ver el proyecto ejecutarse en su navegador por defecto._
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Construido con 🛠️
+_Herramientas que utilizadas para crear este proyecto:_
 
-## Build
+* [Angular](https://angular.io/) - Framework Angular
+* [Bootstrap](https://getbootstrap.com/) - Framework Boostrap
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Autor ✒️
+* **Juan Cruz Rey** - [Linkedin](https://www.linkedin.com/in/jcr-2019)
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
