@@ -11,6 +11,8 @@ import { SortByPipe } from './components/models/pipes/sort-by.pipe';
 import { FilterByPipe } from './components/models/pipes/filter-by.pipe';
 import { ModelItemComponent } from './components/model-item/model-item.component';
 
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +26,8 @@ import { ModelItemComponent } from './components/model-item/model-item.component
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    SlickCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,13 +1,13 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { ApiAgenciaEgoService } from 'src/app/api-agencia-ego.service';
 import { Model } from 'src/app/modelObject/model';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-models',
   templateUrl: './models.component.html',
   styleUrls: ['./models.component.scss']
 })
 export class ModelsComponent implements OnInit {
-
 
   @ViewChild('btnFilterOne') btnFilterOne: ElementRef;
   @ViewChild('btnFilterTwo') btnFilterTwo: ElementRef;
@@ -38,7 +38,7 @@ export class ModelsComponent implements OnInit {
   indiceOrden = 0;
   OrdenAscDesc = "";
 
-  constructor( private apiAgenciaEgoService: ApiAgenciaEgoService ) { }
+  constructor( private apiAgenciaEgoService: ApiAgenciaEgoService,private router: Router ) { }
 
 
   ngOnInit(): void {
@@ -81,5 +81,9 @@ export class ModelsComponent implements OnInit {
   }
   navOrderOpen(){
     this.orderOpen=!this.orderOpen
+  }
+
+  toItemComponent(indice){
+    this.router.navigateByUrl('/modelItem/' + indice);
   }
 }

@@ -1,1 +1,111 @@
-<p>model-item works!</p>
+<div class="container-ficha transition" *ngIf="modelFeatures">
+    <section class="section1 mb-5">
+        <div class="row ml-5 mr-5 mt-5">
+            <!--Grid column-->
+            <div class="col-md-6 mb-4 ">
+                <!-- Featured image -->
+                <div class="view overlay rounded z-depth-2 mb-lg-0 mb-4">
+                    <img class="img-fluid" src="https://challenge.agenciaego.tech{{ modelFeatures.photo }}"
+                        alt="Sample image">
+                    <a>
+                        <div class="mask rgba-white-slight waves-effect waves-light"></div>
+                    </a>
+                </div>
+            </div>
+            <!--Grid column-->
+            <!--Section: news-->
+
+            <div class="col-md-6  mx-auto my-auto">
+                <div class="model">
+                    {{ modelFeatures.name }}
+                </div>
+                <div class="title">
+                    {{ modelFeatures.title }}
+                </div>
+                <div class="subtitle">
+                    {{ modelFeatures.description }}
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section2 mt-5 mb-5">
+        <div class="slider-content">
+            <div class="slider" #slider>
+                <div>
+                    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig"
+                        (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)"
+                        (beforeChange)="beforeChange($event)">
+                        <div ngxSlickItem *ngFor="let data of carouselData" class="slide">
+                            <img src="https://challenge.agenciaego.tech{{ data.photo }}" alt="" width="100%">
+                            <h3>{{ data.name }}</h3>
+                            <p>{{ data.description }}
+                            </p>
+                        </div>
+                    </ngx-slick-carousel>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    
+
+
+
+    
+<section class="section3">
+	<div class="row ml-5 mr-5 mt-5">
+
+	  <div class="col-md-6  mx-auto my-auto">
+		<div class="title">
+			Título de 20 px
+		</div>
+		<div class="subtitle">
+			Texto lorem ipsum dolor sit amet orem ipsum dolor sit amet. lorem ipsum dolor sit amet orem ipsum dolor sit amet lorem ipsum dolor sit amet orem ipsum dolor sit amet.
+		</div>
+	  </div>
+		<!--Grid column-->
+	<div class="col-md-6 mb-4">
+	<!-- Featured image -->
+		<div class="view overlay rounded z-depth-2 mb-lg-0 mb-4">
+			<img class="img-fluid" src="../../assets/modelItem/3.png">
+			<a>
+				<div class="mask rgba-white-slight waves-effect waves-light"></div>
+			</a>
+		</div>
+	</div>
+	<!--Grid column-->
+	</div>
+</section>
+
+
+<section class="section4">
+	<div class="row ml-5 mr-5 mt-5">
+	  <!--Grid column-->
+	  <div class="col-md-6 mb-4">
+		<!-- Featured image -->
+		<div class="view overlay rounded z-depth-2 mb-lg-0 mb-4">
+		  <img class="img-fluid" src="../../assets/modelItem/4.png">
+		  <a>
+			<div class="mask rgba-white-slight waves-effect waves-light"></div>
+		  </a>
+		</div>
+	  </div>
+	  <!--Grid column-->
+	  <!--Section: news-->
+
+	  <div class="col-md-6  mx-auto my-auto">
+		<div class="title">
+			Título de 20 px
+		</div>
+		<div class="subtitle">
+			Texto lorem ipsum dolor sit amet orem ipsum dolor sit amet. lorem ipsum dolor sit amet orem ipsum dolor sit amet lorem ipsum dolor sit amet orem ipsum dolor sit amet.
+		</div>
+	  </div>
+	</div>
+</section>
+
+</div>

@@ -26,7 +26,7 @@
 
     <hr>
     <div class="card-container">
-      <div class="card" *ngFor="let model of models | filterBy:this.listafiltros[this.indice] | sortBy: this.OrdenAscDesc : this.listaOrden[this.indiceOrden]" ><!--(click)=" toFicha(model.model) "-->
+      <div class="card" *ngFor="let model of models | filterBy:this.listafiltros[this.indice] | sortBy: this.OrdenAscDesc : this.listaOrden[this.indiceOrden]" (click)=" toItemComponent(model.id) " >
           <h2>{{model.name}}</h2>
           <h3>{{model.year}} | ${{model.price}}</h3>
           <img src="https://challenge.agenciaego.tech{{model.photo}}" alt="">

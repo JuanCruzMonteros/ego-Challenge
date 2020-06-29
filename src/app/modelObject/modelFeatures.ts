@@ -1,26 +1,24 @@
-export class modelFeatures {
-
-    id : number;
-    name : string;
-    segment : string ;
-    year : number ;
-    price : number ;
-    thumbnail : string ;
-    photo : string;
-
-    title : string ;
-    description : string ;
-    model_features : [
+export class ModelFeatures {
+    id?: number;
+    name?: string;
+    segment?: string ;
+    year?: number ;
+    price?: number ;
+    thumbnail?: string ;
+    photo?: string;
+    title?: string;
+    description?: string ;
+    model_features?: [
     {
-        name : string ;
-        description : string ;
-        photo : string
+        name?: string ;
+        description?: string ;
+        photo?: string
     }
     ];
-    model_highlights : [
+    model_highlights?: [
     {
-        title : string ;
-        content : string ;
-        image : string;
+        title?: string ;
+        content?: string ;
+        image?: string;
     }];
 }
