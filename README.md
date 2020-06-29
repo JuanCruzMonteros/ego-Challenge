@@ -9,11 +9,11 @@ _Para obtener una copia local en funcionamiento, siga estos sencillos pasos._
 
 ### Pre requisitos 📋
 - 1: Debe tener instalado [Node](https://nodejs.org/es/download/)
-- 2: Debe tener instalado [Angular](https://cli.angular.io/) . En caso de no tenerlo, luego de instalar Node, debe ejecutar el siguiente comando en una consola o terminal:
+- 2: Debe tener instalado [Angular](https://cli.angular.io/). En caso de no tenerlo, luego de instalar Node, debe ejecutar el siguiente comando en una consola o terminal:
 ```sh
 npm install -g @angular/cli
 ```
-- 3: Debe tener istalado [git-scm](https://git-scm.com/downloads)
+- 3: Debe tener instalado [git-scm](https://git-scm.com/downloads)
 
 ## Pasos para ejecutar el proyecto 🔧
 _En una terminal o consola debe ejecutar los siguientes comandos_
@@ -33,7 +33,7 @@ ng serve --open
 _En unos segundos podrá ver el proyecto ejecutarse en su navegador por defecto._
 
 ## Construido con 🛠️
-_Herramientas que utilizadas para crear este proyecto:_
+_Herramientas utilizadas para crear este proyecto:_
 
 * [Angular](https://angular.io/) - Framework Angular
 * [Bootstrap](https://getbootstrap.com/) - Framework Boostrap
