@@ -3,8 +3,9 @@
       <div class="contenedor-principal">
         <div class="Logo">
             <img src="../../../../assets/header/logo.png" routerLink="/">
-            <a class="first" routerLink="/"  [routerLinkActive]="['is-active']">Modelos</a>
-            <a class="second" routerLink="/ficha" [routerLinkActive]="['is-active']" >Ficha de modelo</a>
+            <a class="first" routerLink="/"  [routerLinkActive]="['is-active']" [routerLinkActiveOptions]="{exact:
+              true}" >Modelos</a>
+            <a class="second" routerLink="/modelItem/" [routerLinkActive]="['is-active']" >Ficha de modelo</a>
         </div>
         <div class="burguer" (click)="burguerActive()">
           <h4>Menu</h4>
