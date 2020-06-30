@@ -2,21 +2,21 @@
     <nav>
       <div class="contenedor-principal">
         <div class="Logo">
-            <img src="../../../../assets/header/logo.png" routerLink="/">
+            <img src="./assets/header/logo.png" routerLink="/">
             <a class="first" routerLink="/"  [routerLinkActive]="['is-active']" [routerLinkActiveOptions]="{exact:
               true}" >Modelos</a>
             <a class="second" routerLink="/modelItem/" [routerLinkActive]="['is-active']" >Ficha de modelo</a>
         </div>
         <div class="burguer" (click)="burguerActive()">
           <h4>Menu</h4>
-          <img src="../../../../assets/header/gray/gray.png">
+          <img src="./assets/header/gray/gray.png">
   
         </div>
       </div>
       <div class="menu-lista" [ngClass] = "{'active': check }"  >
           <div class="Cerrar" >
             <h4 (click)="burguerDisabled()"> Cerrar </h4>
-            <img src="../../../../assets/header/fill/fill-1.png" (click)="burguerDisabled()">
+            <img src="./assets/header/fill/fill-1.png" (click)="burguerDisabled()">
           </div>
         <ul id="primer-listado">
           <li>Modelos</li>

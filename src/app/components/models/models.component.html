@@ -3,7 +3,7 @@
         <h1>Descubrí todos los modelos</h1>
     </div>
     <div class="filter" >
-      <h4 class="orden" (click) = "navFilterOpen()">Filtrar por <span><img src="../../../assets/home/filter/fill-1.png" alt="">
+      <h4 class="orden" (click) = "navFilterOpen()">Filtrar por <span><img src="./assets/home/filter/fill-1.png" alt="">
         </span>
         <span class="btn-style uno">
           <button (click) = "filterFunction(0)" class="active" #btnFilterOne >Todos</button>
@@ -13,7 +13,7 @@
         </span> 
     </h4>
 
-      <h4 class="orden" (click) = "navOrderOpen()">Ordenar por <span><img src="../../../assets/home/filter/fill-1.png" alt=""></span>
+      <h4 class="orden" (click) = "navOrderOpen()">Ordenar por <span><img src="./assets/home/filter/fill-1.png" alt=""></span>
         <span class="btn-style ordenar" [ngClass] = "{'active': orderOpen}">
           <button (click)=orderFunction(0,0) class="active" #btnOrderOne>Nada</button>
           <button (click)=orderFunction(1,1) #btnOrderTwo>De <span>menor a mayor </span>precio</button>
