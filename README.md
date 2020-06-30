@@ -4,6 +4,8 @@
 <img src="https://raw.githubusercontent.com/JuanCruzMonteros/TeamPlatinoRookieFAQs/master/lineamientos.png" />
 </p>
 
+## Puede ver el deploy [aqui](https://juancruzmonteros.github.io/ego-Challenge/)
+
 ## Getting Started  🚀
 _Para obtener una copia local en funcionamiento, siga estos sencillos pasos._
 
