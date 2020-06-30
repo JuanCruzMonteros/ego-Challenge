@@ -10,10 +10,10 @@ export class ApiAgenciaEgoService {
   constructor( private _http: HttpClient ) {}
 
  getModels():Observable<any>{
-     return this._http.get('http://challenge.agenciaego.tech/models');
+     return this._http.get('https://challenge.agenciaego.tech/models');
  }
 
  GetModelById(id):Observable<any>{
-    return this._http.get('http://challenge.agenciaego.tech/models/'+id);
+    return this._http.get('https://challenge.agenciaego.tech/models/'+id);
  }
 }
