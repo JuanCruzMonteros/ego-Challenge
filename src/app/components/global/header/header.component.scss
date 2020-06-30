@@ -1,4 +1,5 @@
 
+
 header nav .contenedor-principal{
     display: flex;
     align-items: center;
@@ -173,7 +174,7 @@ header nav .contenedor-principal{
           justify-self: center;
           width: 390px;
           position: absolute;
-          top: 71px;
+          top: 71px;  
           border-left: solid 1px #e9e9e9;
           right: 0;
           height: 1130px;
@@ -182,6 +183,7 @@ header nav .contenedor-principal{
       .menu-lista ul:last-child{
          height: 100%;
       }
+
   }
   
   @keyframes change{
@@ -194,6 +196,7 @@ header nav .contenedor-principal{
   }
   
   @media (min-width: 720px){
+
     .burguer{
       display: flex;
       align-items: flex-end;
@@ -245,5 +248,13 @@ header nav .contenedor-principal{
       height: 562px;
     }
   }
-  
-  
+  @media (max-width: 720px){
+    .first {
+      display:none !important;
+    }
+  }
+  @media (max-width: 720px){
+    .second {
+      display:none !important;
+    }
+  }
