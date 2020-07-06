@@ -67,6 +67,7 @@ header nav .contenedor-principal{
 
   /* burger */
   .burguer{
+    display: flex;
     margin-right: 15px;
     cursor: pointer;
     -webkit-user-select: none;
@@ -77,6 +78,7 @@ header nav .contenedor-principal{
   }
   
   .burguer h4{
+    margin: auto;
     display: none;
   }
   
