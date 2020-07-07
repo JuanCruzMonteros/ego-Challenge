@@ -15,11 +15,11 @@
 
       <h4 class="orden" (click) = "navOrderOpen()">Ordenar por <span><img src="./assets/home/filter/fill-1.png" alt=""></span>
         <span class="btn-style ordenar" [ngClass] = "{'active': orderOpen}">
-          <button (click)=orderFunction(0,0) class="active" #btnOrderOne>Nada</button>
-          <button (click)=orderFunction(1,1)>De <span>menor a mayor </span>precio</button>
-          <button (click)=orderFunction(1,0)>De <span>mayor a menor </span>precio</button>
-          <button (click)=orderFunction(2,0)>Más <span>nuevos</span> primero</button>
-          <button (click)=orderFunction(2,1)>Más <span>viejos</span> primero</button>
+          <button (click)="orderFunction(0,0); this.menuOrderOptionActive=0"  [ngClass]="menuOrderOptionActive == 0 ? 'active':''">Nada</button>
+          <button (click)="orderFunction(1,1); this.menuOrderOptionActive=1"  [ngClass]="menuOrderOptionActive == 1 ? 'active':''" >De <span>menor a mayor </span>precio</button>
+          <button (click)="orderFunction(1,0);this.menuOrderOptionActive=2"  [ngClass]="menuOrderOptionActive == 2 ? 'active':''" >De <span>mayor a menor </span>precio</button>
+          <button (click)="orderFunction(2,0);this.menuOrderOptionActive=3"  [ngClass]="menuOrderOptionActive == 3 ? 'active':''" >Más <span>nuevos</span> primero</button>
+          <button (click)="orderFunction(2,1);this.menuOrderOptionActive=4"  [ngClass]="menuOrderOptionActive == 4 ? 'active':''" >Más <span>viejos</span> primero</button>
         </span>
       </h4>
     </div>

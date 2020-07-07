@@ -10,10 +10,11 @@ import { Router } from '@angular/router';
 export class ModelsComponent implements OnInit {
 
   menuFilterOptionActive = 0;
+  menuOrderOptionActive = 0;
   // Lista de modelos
   models: Model[];
   
-  filterOpen = false;
+  filterOpen = true;
   orderOpen = false;
 
 
