@@ -6,20 +6,20 @@
       <h4 class="orden" (click) = "navFilterOpen()">Filtrar por <span><img src="./assets/home/filter/fill-1.png" alt="">
         </span>
         <span class="btn-style uno">
-          <button (click) = "filterFunction(0)" class="active" #btnFilterOne >Todos</button>
-          <button (click) = "filterFunction(1)" #btnFilterTwo >Autos</button>
-          <button (click) = "filterFunction(2)" #btnFilterThree >Pickup y Commerciales</button>
-          <button (click) = "filterFunction(3)" #btnFilterFour >SUVs y Croossovers</button>
+          <button (click) = "filterFunction(0)" [ngClass]="menuFilterOptionActive == 0 ? 'active':''" >Todos</button>
+          <button (click) = "filterFunction(1)" [ngClass]="menuFilterOptionActive == 1 ? 'active':''" >Autos</button>
+          <button (click) = "filterFunction(2)" [ngClass]="menuFilterOptionActive == 2 ? 'active':''" >Pickup y Commerciales</button>
+          <button (click) = "filterFunction(3)" [ngClass]="menuFilterOptionActive == 3 ? 'active':''" >SUVs y Croossovers</button>
         </span> 
     </h4>
 
       <h4 class="orden" (click) = "navOrderOpen()">Ordenar por <span><img src="./assets/home/filter/fill-1.png" alt=""></span>
         <span class="btn-style ordenar" [ngClass] = "{'active': orderOpen}">
           <button (click)=orderFunction(0,0) class="active" #btnOrderOne>Nada</button>
-          <button (click)=orderFunction(1,1) #btnOrderTwo>De <span>menor a mayor </span>precio</button>
-          <button (click)=orderFunction(1,0) #btnOrderThree>De <span>mayor a menor </span>precio</button>
-          <button (click)=orderFunction(2,0) #btnOrderFour>Más <span>nuevos</span> primero</button>
-          <button (click)=orderFunction(2,1) #btnOrderFive>Más <span>viejos</span> primero</button>
+          <button (click)=orderFunction(1,1)>De <span>menor a mayor </span>precio</button>
+          <button (click)=orderFunction(1,0)>De <span>mayor a menor </span>precio</button>
+          <button (click)=orderFunction(2,0)>Más <span>nuevos</span> primero</button>
+          <button (click)=orderFunction(2,1)>Más <span>viejos</span> primero</button>
         </span>
       </h4>
     </div>

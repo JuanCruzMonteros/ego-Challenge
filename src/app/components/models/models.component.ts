@@ -9,21 +9,9 @@ import { Router } from '@angular/router';
 })
 export class ModelsComponent implements OnInit {
 
-  @ViewChild('btnFilterOne') btnFilterOne: ElementRef;
-  @ViewChild('btnFilterTwo') btnFilterTwo: ElementRef;
-  @ViewChild('btnFilterTwoThree') btnFilterTwoThree: ElementRef;
-  @ViewChild('btnFilterFour') btnFilterFour: ElementRef;
-
-  @ViewChild('btnOrderOne') btnOrderOne: ElementRef;
-  @ViewChild('btnOrderTwo') btnOrderTwo: ElementRef;
-  @ViewChild('btnOrderOnThree') btnOrderOnThree: ElementRef;
-  @ViewChild('btnOrderFour') btnOrderFour: ElementRef;
-  @ViewChild('btnOrderFive') btnOrderFive: ElementRef;
-
+  menuFilterOptionActive = 0;
   // Lista de modelos
   models: Model[];
-  
-
   
   filterOpen = false;
   orderOpen = false;
@@ -74,6 +62,7 @@ export class ModelsComponent implements OnInit {
   //filtros:
   filterFunction(number){
     this.indice = number;
+    this.menuFilterOptionActive = number;
   }
 
   navFilterOpen(){
