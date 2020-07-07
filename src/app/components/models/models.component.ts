@@ -14,7 +14,7 @@ export class ModelsComponent implements OnInit {
   // Lista de modelos
   models: Model[];
   
-  filterOpen = true;
+  filterOpen = false;
   orderOpen = false;
 
 
