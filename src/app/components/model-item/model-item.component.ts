@@ -30,6 +30,7 @@ export class ModelItemComponent implements OnInit {
         this.loadDataCarousel(res);
       },error =>{
         console.log(error);
+        this.router.navigate(['/']);
       }
     );
   }
