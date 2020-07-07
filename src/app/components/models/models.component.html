@@ -6,10 +6,10 @@
       <h4 class="orden" (click) = "navFilterOpen()">Filtrar por <span><img src="./assets/home/filter/fill-1.png" alt="">
         </span>
         <span class="btn-style uno" [ngClass] = "{'active': filterOpen}">
-          <button (click) = "filterFunction(0)" [ngClass]="menuFilterOptionActive == 0 ? 'active':''" >Todos</button>
-          <button (click) = "filterFunction(1)" [ngClass]="menuFilterOptionActive == 1 ? 'active':''" >Autos</button>
-          <button (click) = "filterFunction(2)" [ngClass]="menuFilterOptionActive == 2 ? 'active':''" >Pickup y Commerciales</button>
-          <button (click) = "filterFunction(3)" [ngClass]="menuFilterOptionActive == 3 ? 'active':''" >SUVs y Croossovers</button>
+          <button class="child" (click) = "filterFunction(0)" [ngClass]="menuFilterOptionActive == 0 ? 'active':''" >Todos</button>
+          <button class="child" (click) = "filterFunction(1)" [ngClass]="menuFilterOptionActive == 1 ? 'active':''" >Autos</button>
+          <button class="child" (click) = "filterFunction(2)" [ngClass]="menuFilterOptionActive == 2 ? 'active':''" >Pickup y Commerciales</button>
+          <button class="child" (click) = "filterFunction(3)" [ngClass]="menuFilterOptionActive == 3 ? 'active':''" >SUVs y Croossovers</button>
         </span> 
     </h4>
 
